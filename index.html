@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFRICAN HILL HOTEL AND RESORT</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -36,27 +40,23 @@
     <li><a href="/">SPA</a></li>
 
       
-    <li class="services">
-      
+    <li class="services">    
     <a href="/">FACILITIES</a>
-      
-    <!-- DROPDOWN MENU -->
-      
-    <ul class="dropdown">
-      
-    <li><a href="/">RESTAURANT AND BAR </a></li>
-      
-    <li><a href="/">SWIMMING POOL</a></li>
-      
+    <!-- DROPDOWN MENU --> 
+    <ul class="dropdown">   
+    <li><a href="/">RESTAURANT AND BAR </a></li>     
+    <li><a href="/">SWIMMING POOL</a></li>   
     <li><a href="/">EVENT GROUND</a></li>
-    
+    <li><a href="/">PLAY GROUNG</a></li>
+    <li><a href="/">SPA</a></li>
+    <li><a href="/">ROOMS</a></li>
+    <li><a href="/">MEDIA</a></li>
     <li><a href="/">ROOF TOP VIEW</a></li>   
     </ul>   
     </li>
+
     <li><a href="/">EXCLUSIVE PACKAGES</a></li>
-   
-    <li><a href="/">ABOUT US</a></li>
-      
+    <li><a href="/">ABOUT US</a></li> 
     <li><a href="/">BOOK NOW</a></li>   
     </div>
     </ul>
@@ -64,13 +64,67 @@
     <!-- End of Nav Links -->
 
     <!-- nav slide....  -->
-<div class="slide">
+
+
+
+    <!--  -->
+<section class="slidemain swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+            <img src="images/view.jpg" alt="" class="image">
+            <div class="image-data">
+                <span class="text"> The Place To Be In HO.</span>
+            </div>
+        </div>
+
+        <div class="slide swiper-slide">
+            <img src="images/af-compound2.jpg" alt="" class="image">
+            <div class="image-data">
+                <span class="text"> The Place To Be In HO.</span>
+            </div>
+        </div>
+
+        <div class="slide swiper-slide">
+            <img src="images/room.jpg" alt="" class="image">
+            <div class="image-data">
+                <span class="text"> The Place To Be In HO.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+</section>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+
+<!-- <div class="slide">
     <img src="images/ah-compound.jpg" alt="africanhill background" width="100%" height="600px">
     <h1 class="bg-text-center">THE PLACE TO BE IN HO</h1>
-</div>
+</div> -->
     
 
-<section> 
+<section class="hillmain"> 
     <!-- our story column  -->
 <div class="row">
     <div class="column1"> 
@@ -152,67 +206,75 @@
         <div class="storycontent">
             <hr class="hrline"></hr>
             <h3 style="margin: 20px">RESTOURANT AND BAR</h3>
-            <P style="padding: 20px"> Confrence content goes here
+            <P style="padding: 20px"> bar content goes here
             </P>   
-            <a class="aboutlink" href="http://"> Book Us Now</a>
-          </div>
-    
+            <a class="aboutlink" href="http://"> order now</a>
+          </div>   
     </div>
+</div>
 </div>
 
 <!-- pool and childrens playground -->
 <div class="row">
-    <div class="column" style="background-color: red;">
+    <div class="pool1" style="background-color: white;">
+        <div class="storycontent">
+            <hr class="hrline"></hr>
+            <h3 style="margin: 20px">AFRICAN HILL POOL AND PLAYGORUND</h3>
+            <P style="padding: 20px"> Pool and playground content goes </P>
+                <br>
+            <a class="aboutlink" href="http://">Book a Massage</a>
+          </div>
+    
     </div>
-
-    <div class="column" style="background-color: black">
-      <h2>our story goes here</h2>
-    </div>
-</div>
-
-<!-- honeymoon packages -->
-<div class="row">
-    <div class="column" style="background-color: red;">
-    </div>
-
-    <div class="column" style="background-color: black">
-      <h2>our story goes here</h2>
+    <div class="pool2">
     </div>
 </div>
 
-<!-- african hills tour and airport shuttle -->
+<!--African Hill Tour and Airport Shuttle  -->
 <div class="row">
-    <div class="column" style="background-color: red;">
-    </div>
-
-    <div class="column" style="background-color: black">
-      <h2>our story goes here</h2>
+    <div class="tour1">
+          </div>
+    
+    <div class="tour2" style="background-color: white;">
+        <div class="storycontent">
+            <hr class="hrline"></hr>
+            <h3 style="margin: 20px">African Hill Tour And Airport Shuttle</h3>
+            <P style="padding: 20px"> tour and aiport shuttle goes here 
+            </P>   
+            <a class="aboutlink" href="http://"> book a tour now </a>
+          </div>   
     </div>
 </div>
 
-<!-- facilities -->
+
+<!--media video one and comments  -->
+
 <div class="row">
-    <div class="column" style="background-color: red;">
-    </div>
+    <div class="media" style="background-color: red;">
 
-    <div class="column" style="background-color: black">
-      <h2>our story goes here</h2>
     </div>
-</div>
-
-<!-- media videos coments -->
-<div class="row">
-    <div class="column" style="background-color: red;">
-    </div>
-
-    <div class="column" style="background-color: black">
-      <h2>our story goes here</h2>
+    <div class="media" style="background-color: bisque;">
     </div>
 </div>
 
 </section>
-<!-- footer , location and contact -->
-<P>gghhgg</P>
 
+<!-- footer one location and contacts -->
+<div class="row">
+    <div class="footer1" style="background-color: red;">
+
+    </div>
+    <div class="footer1" style="background-color: bisque;">
+    </div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="footerhill"> 
+    <p>Made with &hearts; from African hill...</p>
+    <p>The place to be....in Ho</p>
+    <p>Copyright &copy; 2023. AFRICAN HILL HOTEL..</p>
+</div>
+</footer>
 </body>
 </html> 

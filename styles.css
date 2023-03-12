@@ -69,8 +69,7 @@
     /* DROPDOWN MENU */
     
     .services {
-    position: relative; 
-    
+    position: relative;    
     }
 
     .dropdown {
@@ -81,13 +80,14 @@
     top: 40px;
     transition: all 300ms ease-in-out;
     z-index: 2;
-    background: rgba(247, 152, 10, 0.8);
+    background: rgba(68, 18, 2, 0.959);
     }
     
 
     .dropdown li + li {
     margin-top: 10px;
     transition: all 300ms ease-in-out;
+  
     
     }  
     .dropdown li {
@@ -95,9 +95,10 @@
     width: 8em;
     text-align: center;
     
+    
     }
     .dropdown li:hover {
-    background-color:rgb(245, 242, 241);
+    background-color:rgb(255, 254, 253);
     
     } 
     .services:hover .dropdown {

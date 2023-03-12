@@ -161,21 +161,6 @@
     color: #fff;
 }
 
-.nav-btn{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background:rgb(243, 212, 34);
-}
-.nav-btn:hover{
-    background-color: hsl(41, 78%, 7%);
-}
-
-.nav-btn::before,
-.nav-btn::after {
-    font-size: 20px;
-    color:rgb(245, 242, 241);
-}
 
 .swiper-button-next{
     right: 50px;
@@ -236,28 +221,17 @@
         color: #fff;
     }
 }
-/* .slide{ 
-    color: white;
-    margin-bottom: 0px;
-}
-.bg-text-center{
-    position:absolute ;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Pacifico', cursive;
-    
-} */
-/* our story */
+
 .row{
     margin: 20px;
     margin-bottom: 40px;
  
 }
+/* our story */
 .column1{
     float: left;
     width: 50%;
-    height: 350px;
+    height: 450px;
     background-image: url("images/view_3000x1329.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -266,47 +240,147 @@
 .column2{
     float: left;
     width: 50%;
-    height: 350px;   
+    height: 450px;   
+    text-align: center;
+    background-image: url("images/africa22-removebg-preview.jpg");
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
 }
 .row:after{
     content: " ";
     display: table;
     clear: both;
 }
-/* our story */
-.hrline{
-    border-top: 1px dashed rgba(84, 47, 29, 1);
+
+.hillhead{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    text-align: center;
 }
 .storycontent{
     padding: 30px;
-    text-align: center;   
+    text-align: left; 
+    font-family: Arial, sans-serif;  
+    margin-bottom: 30px;
+    color: rgb(201, 50, 50);
 }
-a{
-    border: 2px;
-    border-color: chocolate;
-}
+
+.buttonabout {
+    border-radius: 4px;
+    background-color: #ee991a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .buttonabout span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .buttonabout span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buttonabout:hover span {
+    padding-right: 25px;
+  }
+  
+  .buttonabout:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 
 /* accomodation */
 .columnaccomodation1{
     float: left;
     width: 50%;
-    height: 350px; 
+    height: 450px; 
+    text-align: center;
+    background-image: url("images/africa22-removebg-preview.jpg");
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .columnaccomodation2{
     float: left;
     width: 50%;
-    height: 350px;
+    height: 450px;
     background-image: url("images/ah-bedroom-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
+.accomodation-content{
+    padding: 30px;
+    text-align: left; 
+    font-family: Arial, sans-serif;  
+    margin-bottom: 30px;
+    color: rgb(192, 98, 98);
+}
+
+.buttonacco {
+    border-radius: 4px;
+    background-color: #ee991a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 65px;
+
+  }
+  
+  .buttonacco span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .buttonacco span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buttonacco:hover span {
+    padding-right: 25px;
+  }
+  
+  .buttonacco:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 
 /* confrence */
 .confrence1{
     float: left;
     width: 50%;
-    height: 350px;
+    height: 450px;
     background-image: url("images/ah-beedroom.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -314,30 +388,139 @@ a{
 .confrence2{
     float: left;
     width: 50%;
-    height: 350px;
+    height: 450px;   
+    text-align: center;
+    background-image: url("images/africa22-removebg-preview.jpg");
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.confrencecontent{
+    padding: 30px;
+    text-align: left; 
+    font-family: Arial, sans-serif;  
+    margin-bottom: 30px;
+    color: rgb(192, 98, 98);
+}
+
+.buttonconfrence {
+    border-radius: 4px;
+    background-color: #ee991a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 45px;
+
+  }
+  
+  .buttonconfrence span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .buttonconfrence span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buttonconfrence:hover span {
+    padding-right: 25px;
+  }
+  
+  .buttonconfrence:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
 
 /* massage */
 .massage1{
     float: left;
     width: 50%;
-    height: 350px; 
+    height: 450px; 
+    text-align: center;
+    background-image: url("images/africa22-removebg-preview.jpg");
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .massage2{
     float: left;
     width: 50%;
-    height: 350px;
-    background-image: url("images/view1.jpg");
+    height: 450px;
+    background-image: url("images/ah-bedroom-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
+.massagecontent{
+    padding: 30px;
+    text-align: left; 
+    font-family: Arial, sans-serif;  
+    margin-bottom: 30px;
+    color: rgb(192, 98, 98);
+}
+
+.buttonmassage {
+    border-radius: 4px;
+    background-color: #ee991a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 65px;
+
+  }
+  
+  .buttonmassage span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .buttonmassage span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buttonmassage:hover span {
+    padding-right: 25px;
+  }
+  
+  .buttonmassage:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 
 /* bar and restourant */
 .bar1{
     float: left;
     width: 50%;
-    height: 350px;
+    height: 450px;
     background-image: url("images/ah-beedroom.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -345,25 +528,48 @@ a{
 .bar2{
     float: left;
     width: 50%;
-    height: 350px;
+    height: 450px;   
+    text-align: center;
+    background-image: url("images/africa22-removebg-preview.jpg");
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+.barcontent{
+    padding: 30px;
+    text-align: left; 
+    font-family: Arial, sans-serif;  
+    margin-bottom: 30px;
+    color: rgb(192, 98, 98);
+}
 /* pool playground */
 .pool1{
     float: left;
     width: 50%;
-    height: 350px; 
+    height: 450px; 
+    text-align: center;
+    background-image: url("images/africa22-removebg-preview.jpg");
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .pool2{
     float: left;
     width: 50%;
-    height: 350px;
-    background-image: url("images/ah-beedroom.jpg");
+    height: 450px;
+    background-image: url("images/ah-bedroom-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.poolcontent{
+    padding: 30px;
+    text-align: left; 
+    font-family: Arial, sans-serif;  
+    margin-bottom: 30px;
+    color: rgb(192, 98, 98);
+}
 /* tour and airport shuttle */
 .tour1{
     float: left;
@@ -377,6 +583,14 @@ a{
     float: left;
     width: 50%;
     height: 350px;
+}
+
+.tourcontent{
+    padding: 30px;
+    text-align: left; 
+    font-family: Arial, sans-serif;  
+    margin-bottom: 30px;
+    color: rgb(192, 98, 98);
 }
 
 /* media */
@@ -476,7 +690,7 @@ input[type=checkbox]:checked ~ .menu{
     font-size: 0;
     animation: 30s slidy infinite; 
     } 
-
+/* story */
 .column1{
     width: 100%;
     background-image: url("images/view_3000x1329.jpeg");
@@ -487,7 +701,13 @@ input[type=checkbox]:checked ~ .menu{
 .column2{
     width: 100%;
 }
-
+.storycontent{ 
+    margin-bottom: 0px;
+}
+.buttonabout {
+    margin: 0px;
+  }
+/* accomadation */
 .columnaccomodation2{
     width: 100%;
     background-size: cover;
@@ -508,6 +728,16 @@ input[type=checkbox]:checked ~ .menu{
 .confrence2{
     width: 100%;
 }
+
+.confrencecontent{ 
+    margin-bottom: 0px;
+}
+
+.buttonconfrence {
+
+    margin: 15px;
+
+  }
 
 /* massage */
 .massage1{
@@ -534,12 +764,11 @@ input[type=checkbox]:checked ~ .menu{
 /* pool playground */
 .pool1{
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .pool2{
     width: 100%;
-
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* tour and airport shuttle */
